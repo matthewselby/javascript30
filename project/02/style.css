@@ -28,6 +28,9 @@ body {
   width: 100%;
   height: 100%;
   transform: translateY(-3px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .hand {
   width: 50%;
@@ -39,6 +42,18 @@ body {
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hand.hour-hand {
+  width: 30%;
+  left: 20%;
+}
+.hand.min-hand {
+  width: 45%;
+  left: 5%;
+}
+.hand.second-hand {
+  width: 54%;
+  left: -4%;
 }
 .number {
   position: absolute;
